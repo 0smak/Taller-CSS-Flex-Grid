@@ -10,6 +10,6 @@ const flipNav = () => {
 document.querySelector('#hamburger').addEventListener('click', flipNav, false);
 
 window.onunload = () => {
-    document.querySelector('#hamburger').clickListener.removeEventListener('click', flipNav);
+    document.querySelector('#hamburger').removeEventListener('click', flipNav);
     return;
 }
