@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller CSS Layout - Flex y Grid - Propiedades FLEX</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <link rel="stylesheet" href="css/feature-list.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+
+<body>
+    <nav id="navbar" class="nav">
+        <ul class="nav__ul">
+            <li class="nav__li"><a class="nav__a" href="./index.html">#0 - home</a></li>
+            <li class="nav__li"><a class="nav__a" href="./01-display.html">#1 - Propiedades basicas del display</a></li>
+            <li class="nav__li"><a class="nav__a" href="./02-flex-grid-introduction.html">#2 - Introducción al flex y al
+                    grid</a></li>
+            <li class="nav__li nav__li--active"><a class="nav__a" href="./03-properties-flex.html">#3 - Propiedades del
+                    flex</a></li>
+            <li class="nav__li"><a class="nav__a" href="./04-properties-grid.html">#4 - Propiedades del
+                    grid</a></li>
+            <li class="nav__li"><a class="nav__a" href="./05-demo.html">#5 - Demo</a></li>
+        </ul>
+    </nav>
+    <div id="hamburger" class="hamburger-container">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="navigator">
+        <a class="navigator__a" href="./02-flex-grid-introduction.html">Anterior</a>
+        <a class="navigator__a" href="./04-properties-grid.html">Siguiente</a>
+    </div>
+    <div class="container">
+        <main class="feature-list feature-list--no-margin">
+            <div class="grid-two-cols grid-two-cols--top">
+
+                <section class="feature-list__el">
+                    <h1 class="container__title">
+                        Propiedades del flex (Padre)
+                    </h1>
+                    <div class="feature-list__desc">
+                        <p class="feature-list__p">Para distribuir nuestros elementos en el flexbox, podemos añadir en
+                            el
+                            padre ciertas propiedades, entre ellas están:</br></br></p>
+                        <ul class="feature-list__list">
+                            <li class="feature-list__li feature-list__li--with-code"><code
+                                    class="code-snippet">flex-direction</code>
+                                <span class="feature-list__desc">Establece el eje y la dirección en la que se
+                                    distribuyen
+                                    los elementos</span>
+                            </li>
+                            <li class="feature-list__li feature-list__li--with-code"><code
+                                    class="code-snippet">flex-wrap</code>
+                                <span class="feature-list__desc">Especifica si los elementos hijos deben permanecer en
+                                    la
+                                    misma linea o pueden fluir en la siguiente linea</span>
+
+                            </li>
+                            <li class="feature-list__li feature-list__li--with-code"><code
+                                    class="code-snippet">flex-flow</code>
+                                <span class="feature-list__desc">shortland de wrap y direction</span>
+
+                            </li>
+                            <li class="feature-list__li feature-list__li--with-code"><code
+                                    class="code-snippet">justify-content</code>
+                                <span class="feature-list__desc">Establece el posicionamiento de los elementos sobre el
+                                    eje principal</span>
+                            </li>
+                            <li class="feature-list__li feature-list__li--with-code"><code
+                                    class="code-snippet">align-content</code>
+                                <span class="feature-list__desc">Establece el posicionamiento de los elementos sobre el
+                                    eje transversal</span>
+                            </li>
+                            <li class="feature-list__li feature-list__li--with-code"><code
+                                    class="code-snippet">align-items</code>
+                                <span class="feature-list__desc">Establece el <code
+                                        class="code-snippet">align-self</code> de todos los descendientes
+                                    directos</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </section>
+                <section class="feature-list__el">
+                    <h1 class="container__title">
+                        Propiedades del flex (hijo)
+                    </h1>
+                    <div class="feature-list__desc">
+                        <p class="feature-list__p">En el hijo podemos añadir otra serie de propiedades:</br></br></p>
+                        <ul class="feature-list__list">
+                            <li class="feature-list__li feature-list__li--with-code"><code
+                                    class="code-snippet">order</code>
+                                <span class="feature-list__desc">
+                                    Establece la posición/orden en la que va el elemento
+                                </span>
+                            </li>
+                            <li class="feature-list__li feature-list__li--with-code"><code
+                                    class="code-snippet">flex-grow</code>
+                                <span class="feature-list__desc">
+                                    Define cuanto queremos que crezca un elemento de nuestro flex layout
+                                </span>
+                            </li>
+                            <li class="feature-list__li feature-list__li--with-code"><code
+                                    class="code-snippet">flex-shrink</code>
+                                <span class="feature-list__desc">
+                                    Define cuanto queremos que se contraiga un elemento de nuestro flex layout
+                                </span>
+                            </li>
+                            <li class="feature-list__li feature-list__li--with-code"><code
+                                    class="code-snippet">flex-basis</code>
+                                <span class="feature-list__desc">
+                                    Establece el valor inicial del tamaño del elemento acorde a su eje principal
+                                </span>
+                            </li>
+                            <li class="feature-list__li feature-list__li--with-code"><code
+                                    class="code-snippet">flex</code>
+                                <span class="feature-list__desc">
+                                    Shortland de grow shrink y basis
+                                </span>
+                            </li>
+                            <li class="feature-list__li feature-list__li--with-code"><code
+                                    class="code-snippet">align-self</code>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+        </main>
+    </div>
+</body>
+<script src="./js/nav.js"></script>
+
+</html>

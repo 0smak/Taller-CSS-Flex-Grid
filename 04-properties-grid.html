@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller CSS Layout - Flex y Grid - Propiedades GRID</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <link rel="stylesheet" href="css/feature-list.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+
+<body>
+    <nav id="navbar" class="nav">
+        <ul class="nav__ul">
+            <li class="nav__li"><a class="nav__a" href="./index.html">#0 - home</a></li>
+            <li class="nav__li"><a class="nav__a" href="./01-display.html">#1 - Propiedades basicas del display</a></li>
+            <li class="nav__li"><a class="nav__a" href="./02-flex-grid-introduction.html">#2 - Introducción al flex y al
+                    grid</a></li>
+            <li class="nav__li"><a class="nav__a" href="./03-properties-flex.html">#3 - Propiedades del flex</a></li>
+            <li class="nav__li nav__li--active"><a class="nav__a" href="./04-properties-grid.html">#4 - Propiedades del
+                    grid</a></li>
+            <li class="nav__li"><a class="nav__a" href="./05-demo.html">#5 - Demo</a></li>
+        </ul>
+    </nav>
+    <div id="hamburger" class="hamburger-container">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="navigator">
+        <a class="navigator__a" href="./03-properties-flex.html">Anterior</a>
+        <a class="navigator__a" href="./05-demo.html">Siguiente</a>
+    </div>
+    <div class="container">
+        <main class="feature-list feature-list--no-margin">
+            <div class="grid-two-cols grid-two-cols--top">
+
+                <section class="feature-list__el">
+                    <h1 class="container__title">
+                        Propiedades del grid (Padre)
+                    </h1>
+                    <div class="feature-list__desc">
+                        <p class="feature-list__p">Para distribuir nuestros elementos en el grid, podemos añadir en
+                            el
+                            padre ciertas propiedades, entre ellas están:</br></br></p>
+                        <ul class="feature-list__list">
+                            <li class="feature-list__li feature-list__li--with-code"><code
+                                    class="code-snippet">grid-template-columns</code> y <code
+                                    class="code-snippet">grid-template-rows</code>
+                                <span class="feature-list__desc">Establece el el tamaño de las columnas/filas dandole
+                                    una lista de unidades</span>
+                            </li>
+                            <li class="feature-list__li feature-list__li--with-code"><code
+                                    class="code-snippet">grid-template-areas</code>
+                                <span class="feature-list__desc">Nos ayuda para layouts con muchos elementos
+                                    distribuidos de multiples formas ya que referenciamos mediante texto el nombre de
+                                    cada area</span>
+
+                            </li>
+                            <li class="feature-list__li feature-list__li--with-code"><code
+                                    class="code-snippet">grid-template</code>
+                                <span class="feature-list__desc">shortland de <code
+                                        class="code-snippet">grid-template-columns</code>, <code
+                                        class="code-snippet">grid-template-rows</code> y <code
+                                        class="code-snippet">grid-template-areas</code>
+                                </span>
+
+                            </li>
+                            <li class="feature-list__li feature-list__li--with-code"><code
+                                    class="code-snippet">column-gap</code>, <code class="code-snippet">row-gap</code>,
+                                <code class="code-snippet">grid-column-gap</code>, <code
+                                    class="code-snippet">grid-row-gap</code>, <code class="code-snippet">gap</code> y
+                                <code class="code-snippet">grid-gap</code>
+                                <span class="feature-list__desc">Establece la distancia entre las columnas y
+                                    filas</span>
+                            </li>
+                            <li class="feature-list__li feature-list__li--with-code"><code
+                                    class="code-snippet">align-content</code>
+                                <span class="feature-list__desc">Alinea las columnas en el eje vertical</span>
+                            </li>
+                            <li class="feature-list__li feature-list__li--with-code"><code
+                                    class="code-snippet">justify-content</code>
+                                <span class="feature-list__desc">Alinea las columnas en el eje horizontal</span>
+                            </li>
+                            <li class="feature-list__li feature-list__li--with-code"><code
+                                    class="code-snippet">justify-items</code>
+                                <span class="feature-list__desc">Establece el <code
+                                        class="code-snippet">align-self</code> de todos los descendientes
+                                    directos en el eje horizontal</span>
+                            </li>
+                            <li class="feature-list__li feature-list__li--with-code"><code
+                                    class="code-snippet">place-items</code>
+                                <span class="feature-list__desc">Establece el <code
+                                        class="code-snippet">align-items</code> y el <code
+                                        class="code-snippet">justify-items</code> de todos los elementos</span>
+                            </li>
+                            <li class="feature-list__li feature-list__li--with-code"><code
+                                    class="code-snippet">place-content</code>
+                                <span class="feature-list__desc">Establece el <code
+                                        class="code-snippet">align-content</code> y el <code
+                                        class="code-snippet">justify-content</code> de todos los elementos</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </section>
+                <section class="feature-list__el">
+                    <h1 class="container__title">
+                        Propiedades del grid (hijo)
+                    </h1>
+                    <div class="feature-list__desc">
+                        <p class="feature-list__p">En el hijo podemos añadir otra serie de propiedades:</br></br></p>
+                        <ul class="feature-list__list">
+                            <li class="feature-list__li feature-list__li--with-code"><code
+                                    class="code-snippet">grid-column-start</code>, <code
+                                    class="code-snippet">grid-column-end</code>, <code
+                                    class="code-snippet">grid-row-start</code>y <code
+                                    class="code-snippet">grid-row-end</code>
+                                <span class="feature-list__desc">
+                                    Indica la columna/fila en la que empieza/termina el elemento
+                                </span>
+                            </li>
+                            <li class="feature-list__li feature-list__li--with-code"><code
+                                    class="code-snippet">grid-area</code>
+                                <span class="feature-list__desc">
+                                    el elemento es referenciado por el nombre que se le introduce al grid-template-area
+                                    del padre y posiciona el elemento en ese area
+                                </span>
+                            </li>
+                            <li class="feature-list__li feature-list__li--with-code"><code
+                                    class="code-snippet">justify-self</code>
+                                <span class="feature-list__desc">
+                                    Posiciona el elemento en el eje horizontal
+                                </span>
+                            </li>
+                            <li class="feature-list__li feature-list__li--with-code"><code
+                                    class="code-snippet">align-self</code>
+                                <span class="feature-list__desc">
+                                    Posiciona el elemento en el eje vertical
+                                </span>
+                            </li>
+                            <li class="feature-list__li feature-list__li--with-code"><code
+                                    class="code-snippet">place-self</code>
+                                <span class="feature-list__desc">
+                                    Establece el <code class="code-snippet">place-self</code> y el <code
+                                        class="code-snippet">justify-self</code> del elemento
+                                </span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+        </main>
+    </div>
+</body>
+
+<script src="./js/nav.js"></script>
+
+</html>

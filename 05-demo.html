@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Layouts CSS</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+
+<body>
+    <nav id="navbar" class="nav">
+        <ul class="nav__ul">
+            <li class="nav__li"><a class="nav__a" href="./index.html">#0 - home</a></li>
+            <li class="nav__li"><a class="nav__a" href="./01-display.html">#1 - Propiedades basicas del display</a></li>
+            <li class="nav__li"><a class="nav__a" href="./02-flex-grid-introduction.html">#2 - Introducción al flex y al
+                    grid</a></li>
+            <li class="nav__li"><a class="nav__a" href="./03-properties-flex.html">#3 - Propiedades del flex</a></li>
+            <li class="nav__li"><a class="nav__a" href="./04-properties-grid.html">#4 - Propiedades del
+                    grid</a></li>
+            <li class="nav__li nav__li--active"><a class="nav__a" href="./05-demo.html">#5 - Demo</a></li>
+        </ul>
+    </nav>
+    <div id="hamburger" class="hamburger-container">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="navigator">
+        <a class="navigator__a" href="./04-properties-grid.html">Anterior</a>
+        <a class="navigator__a navigator__a--disabled">Siguiente</a>
+    </div>
+    <div class="content-wrapper">
+        <div class="l-center">
+            <div class="display">
+                <div class="display__title">
+                    DEMO
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/nav.js"></script>
+
+</html>

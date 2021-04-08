@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller CSS Layout - Display</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <link rel="stylesheet" href="css/feature-list.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+
+<body>
+    <nav id="navbar" class="nav">
+        <ul class="nav__ul">
+            <li class="nav__li"><a class="nav__a" href="./index.html">#0 - home</a></li>
+            <li class="nav__li nav__li--active"><a class="nav__a" href="./01-display.html">#1 - Propiedades basicas del
+                    display</a></li>
+            <li class="nav__li"><a class="nav__a" href="./02-flex-grid-introduction.html">#2 - Introducción al flex y al
+                    grid</a></li>
+            <li class="nav__li"><a class="nav__a" href="./03-properties-flex.html">#3 - Propiedades del flex</a></li>
+            <li class="nav__li"><a class="nav__a" href="./04-properties-grid.html">#4 - Propiedades del
+                    grid</a></li>
+            <li class="nav__li"><a class="nav__a" href="./05-demo.html">#5 - Demo</a></li>
+        </ul>
+    </nav>
+    <div id="hamburger" class="hamburger-container">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="navigator">
+        <a class="navigator__a" href="./index.html">Anterior</a>
+        <a class="navigator__a" href="./02-flex-grid-introduction.html">Siguiente</a>
+    </div>
+    <div class="container">
+        <h1 class="container__title">
+            Propiedades Display más conocidas
+        </h1>
+        <main class="feature-list">
+            <section class="feature-list__el">
+                <div class="feature-list__title">hidden</div>
+                <div class="feature-list__desc">
+                    <p class="feature-list__p">
+                        El elemento actua como si no existiese (no se muestra)
+                    </p>
+                </div>
+            </section>
+            <section class="feature-list__el">
+                <div class="feature-list__title">block</div>
+                <div class="grid-two-cols">
+                    <div>
+                        <div class="feature-list__desc">
+                            <ul class="feature-list__list">
+                                <li class="feature-list__li">Puedes añadirle width y height</li>
+                                <li class="feature-list__li">Si no añades width, ocupa el 100% del padre</li>
+                                <li class="feature-list__li">Cada elemento se situa en una nueva linea</li>
+                                <li class="feature-list__li">Dentro podemos anidar otros elementos de tipo bloque o
+                                    inline
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="feature-list__code-container">
+                        <code class="feature-list__code">
+                            &lt;p&gt;</br>
+                            &lt;h1&gt;</br>
+                            &lt;div&gt;</br>
+                            &lt;header&gt;</br>
+                        </code>
+                    </div>
+                </div>
+
+            </section>
+            <section class="feature-list__el">
+                <div class="feature-list__title">inline</div>
+                <div class="grid-two-cols">
+                    <div>
+                        <div class="feature-list__desc">
+                            <ul class="feature-list__list">
+                                <li class="feature-list__li">No puedes añadirle width y height</li>
+                                <li class="feature-list__li">No puedes añadirle margenes a la izquierda/derecha</li>
+                                <li class="feature-list__li">Toman el espacio máximo del componente (no del padre)
+                                </li>
+                                <li class="feature-list__li">Los elementos se situan en la misma linea</li>
+                                <li class="feature-list__li">Dentro puede haber elementos de tipo inline
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="feature-list__code-container">
+                        <code class="feature-list__code">
+                            &lt;span&gt;</br>
+                            &lt;a&gt;</br>
+                            &lt;strong&gt;</br>
+                            &lt;img&gt;</br>
+                        </code>
+                    </div>
+                </div>
+            </section>
+            <section class="feature-list__el">
+                <div class="feature-list__title">inline-block</div>
+                <div class="grid-two-cols">
+                    <div>
+                        <div class="feature-list__desc">
+                            <p class="feature-list__p">Esta propiedad es una mezcla de las dos anteriores, en la que
+                                podemos
+                                definirle un ancho y un
+                                alto, pero no tienen por que situarse en una nueva linea</p>
+                        </div>
+                    </div>
+                    <div class="feature-list__code-container">
+                        <code class="feature-list__code">
+                            &lt;input&gt;</br>
+                            &lt;button&gt;</br>
+                            &lt;textarea&gt;</br>
+                            &lt;select&gt;</br>
+                        </code>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+<script src="./js/nav.js"></script>
+
+</html>
